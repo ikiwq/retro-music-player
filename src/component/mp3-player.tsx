@@ -156,7 +156,7 @@ export default function Mp3Player() {
 
   return (
     <div className={`
-      w-80 h-32 
+      w-72 h-32 
       bg-gradient-to-t from-neutral-700 to-neutral-600 
       rounded-full 
       border border-neutral-600 
@@ -295,8 +295,8 @@ function MediaScreen({song, timeDisplayRef, inputRef, onChangeInput, shuffling, 
           shadow-inner shadow-neutral-900
           flex flex-col
           `}>
-        <div className="text-sm text-neutral-200 h-full flex items-center justify-center">
-          <p className="w-[80%] text-center pt-2">{song?.title}</p>
+        <div className="text-neutral-200 h-full flex items-center justify-center pt-1.5">
+          <p className="text-xs not-even:w-[80%] text-center pt-2">{song?.title}</p>
         </div>
         <div className="h-full flex flex-col items-center justify-center gap-2">
           <input
